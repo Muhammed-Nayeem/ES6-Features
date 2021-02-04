@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API</title>
+</head>
+<body>
+  <h3>Application Programming Interface</h3>
+  <h4>JSON</h4>
+  <p>JavaScript Object Notation</p>
+
+
+  <script>
+    const user = {
+      id: 132,
+      Name: `Muhammed Nayeem`,
+      occupation: `Software Developer`,
+      lover: {
+        girlFriend: `JavaScript`,
+        favFood: `Coding`,
+      },
+      friends:[
+        `Pranab`,
+        `Shuvo`,
+        `Sohel`,
+        `Partha`,
+        `Joydip`,
+        `Anupm`,
+        `Indrajit`
+      ],
+      friendAge: [
+        22, 25, 21, 30, 27, 29, 24
+      ],
+    };
+    const userJSON = JSON.stringify(user);
+    // {"id":132,"Name":"Muhammed Nayeem","occupation":"Software Developer"}
+    console.log(userJSON);
+
+    const userFromJson = JSON.parse(userJSON);
+    console.log(userFromJson);
+  </script>
+</body>
+</html>
