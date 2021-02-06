@@ -1,0 +1,20 @@
+#countryDetails img {
+  width: 250px;
+}
+.country-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.country {
+  border: 1px solid salmon;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.country-name {
+  color: coral;
+}
+.country-capital {
+  color: crimson;
+}
